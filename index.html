@@ -18,7 +18,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         .phone-container {
@@ -34,7 +34,7 @@
         .phone-screen {
             width: 100%;
             height: 100%;
-            background: white;
+            background: #0a2540;
             border-radius: 35px;
             overflow: hidden;
             position: relative;
@@ -299,12 +299,15 @@
             font-weight: 700;
             margin-bottom: 16px;
             line-height: 1.1;
+            color: white;
         }
 
         .landing-subtitle {
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 30px;
             opacity: 0.9;
+            color: white;
+            line-height: 1.5;
         }
 
         .app-icon-container {
@@ -458,19 +461,28 @@
             <div class="screen landing-screen active" id="screen0">
                 <div class="landing-content">
                     <div class="logo-header">
-                        <img src="/swimnerd-logo.png" alt="Swimnerd" style="height: 32px; margin-bottom: 40px;">
+                        <div style="color: white; font-size: 20px; font-weight: 700; margin-bottom: 40px;">Swimnerd</div>
                     </div>
                     <h1 class="landing-title">Train Smarter, <span style="color: #0088cc;">Swim Faster</span></h1>
                     <p class="landing-subtitle">The ultimate platform for swimmers to track progress, connect with coaches, and achieve their goals with AI-powered insights.</p>
                     
                     <div class="app-icon-container">
                         <div class="app-icon">
-                            🏊
+                            <svg width="70" height="70" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Pool -->
+                                <rect x="20" y="45" width="60" height="35" fill="#0088cc" rx="8"/>
+                                <!-- Pool lines -->
+                                <line x1="20" y1="55" x2="80" y2="55" stroke="white" stroke-width="1" opacity="0.3"/>
+                                <line x1="20" y1="65" x2="80" y2="65" stroke="white" stroke-width="1" opacity="0.3"/>
+                                <!-- Swimmer -->
+                                <circle cx="50" cy="35" r="8" fill="#ff9500"/>
+                                <ellipse cx="50" cy="48" rx="10" ry="6" fill="#ff9500"/>
+                            </svg>
                         </div>
                     </div>
 
                     <button class="continue-button cta-button" onclick="nextScreen()">Start Your Journey →</button>
-                    <div class="secondary-link" style="margin-top: 16px; font-weight: 600; cursor: pointer;">Sign In</div>
+                    <div class="secondary-link" style="margin-top: 16px; font-weight: 600; cursor: pointer; color: #0088cc;">Sign In</div>
                 </div>
             </div>
 
