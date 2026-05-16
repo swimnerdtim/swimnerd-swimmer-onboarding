@@ -307,46 +307,38 @@
             opacity: 0.9;
         }
 
-        .camera-demo {
-            width: 220px;
-            height: 280px;
-            background: #000;
-            border-radius: 20px;
+        .app-icon-container {
+            width: 120px;
+            height: 120px;
             margin: 0 auto 30px auto;
-            position: relative;
-            overflow: hidden;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .camera-demo {
+            display: none;
         }
 
         .workout-paper {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(-2deg);
-            width: 200px;
-            height: 260px;
-            background: #f5f5dc;
-            padding: 15px;
-            font-family: 'Courier New', monospace;
-            font-size: 11px;
-            line-height: 1.6;
-            color: #163d5e;
+            display: none;
         }
 
         .scan-corners {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 220px;
-            height: 280px;
-            pointer-events: none;
+            display: none;
         }
 
         .corner {
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            border: 3px solid #00ff88;
+            display: none;
             filter: drop-shadow(0 0 8px rgba(0,255,136,0.6));
             animation: pulse 2s ease-in-out infinite;
         }
@@ -385,13 +377,7 @@
         }
 
         .scan-line {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #00ff88, transparent);
-            animation: scan 2s linear infinite;
+            display: none;
         }
 
         @keyframes scan {
@@ -477,32 +463,14 @@
                     <h1 class="landing-title">Train Smarter, <span style="color: #0088cc;">Swim Faster</span></h1>
                     <p class="landing-subtitle">The ultimate platform for swimmers to track progress, connect with coaches, and achieve their goals with AI-powered insights.</p>
                     
-                    <div class="camera-demo">
-                        <div class="workout-paper">
-                            <div style="text-decoration: underline; font-weight: bold; margin-bottom: 10px;">MAIN SET</div>
-                            Warm up:<br>
-                            400 swim<br>
-                            8x50 kick @ :50<br>
-                            <br>
-                            Main:<br>
-                            10x100 Free @ 1:30<br>
-                            Desc 1-5<br>
-                            Build 6-10<br>
-                            <br>
-                            6x50 @ :45<br>
-                            ALL OUT
+                    <div class="app-icon-container">
+                        <div class="app-icon">
+                            🏊
                         </div>
-                        <div class="scan-corners">
-                            <div class="corner top-left"></div>
-                            <div class="corner top-right"></div>
-                            <div class="corner bottom-left"></div>
-                            <div class="corner bottom-right"></div>
-                        </div>
-                        <div class="scan-line"></div>
                     </div>
 
-                    <button class="continue-button cta-button" onclick="nextScreen()">Get Started</button>
-                    <div class="secondary-link">Already have an account? Sign In</div>
+                    <button class="continue-button cta-button" onclick="nextScreen()">Start Your Journey →</button>
+                    <div class="secondary-link" style="margin-top: 16px; font-weight: 600; cursor: pointer;">Sign In</div>
                 </div>
             </div>
 
