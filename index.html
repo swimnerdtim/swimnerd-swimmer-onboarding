@@ -13,7 +13,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(to bottom, #d4e8f5 0%, #b8daea 100%);
+            background: linear-gradient(to bottom, #e8f4f8 0%, #d4e8f5 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -24,17 +24,17 @@
         .phone-container {
             width: 375px;
             height: 812px;
-            background: linear-gradient(135deg, #2c3e50 0%, #1a1a1a 100%);
+            background: linear-gradient(135deg, #e0e0e0 0%, #c8c8c8 100%);
             border-radius: 45px;
             padding: 16px;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.3), 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.15), 0 10px 20px rgba(0,0,0,0.1);
             position: relative;
         }
 
         .phone-screen {
             width: 100%;
             height: 100%;
-            background: #0a2540;
+            background: #ffffff;
             border-radius: 35px;
             overflow: hidden;
             position: relative;
@@ -116,11 +116,12 @@
             font-weight: 700;
             margin-bottom: 10px;
             line-height: 1.2;
+            color: #1a1a1a;
         }
 
         .screen-subtitle {
             font-size: 16px;
-            color: #666;
+            color: #666666;
             margin-bottom: 30px;
             line-height: 1.4;
         }
@@ -132,8 +133,8 @@
 
         /* Option Buttons */
         .option {
-            background: #f5f5f5;
-            border: 2px solid transparent;
+            background: #ffffff;
+            border: 2px solid #e0e0e0;
             padding: 18px 20px;
             border-radius: 16px;
             margin-bottom: 12px;
@@ -143,16 +144,18 @@
             display: flex;
             align-items: center;
             gap: 12px;
+            color: #1a1a1a;
         }
 
         .option:hover {
-            background: #e8e8e8;
+            background: #f5f5f5;
+            border-color: #0088cc;
         }
 
         .option.selected {
-            background: #2a2a2a;
+            background: #0088cc;
             color: white;
-            border-color: #2a2a2a;
+            border-color: #0088cc;
         }
 
         .option-icon {
@@ -166,12 +169,13 @@
 
         .option-sublabel {
             font-size: 14px;
-            color: #999;
+            color: #999999;
             margin-top: 4px;
         }
 
         .option.selected .option-sublabel {
-            color: #ccc;
+            color: #ffffff;
+            opacity: 0.9;
         }
 
         /* Checkbox Multi-Select */
@@ -179,19 +183,20 @@
             content: '';
             width: 24px;
             height: 24px;
-            border: 2px solid #ccc;
+            border: 2px solid #cccccc;
             border-radius: 6px;
             margin-right: 12px;
+            background: white;
         }
 
         .option.checkbox.selected::before {
-            background: white;
-            border-color: white;
+            background: #0088cc;
+            border-color: #0088cc;
             content: '✓';
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #2a2a2a;
+            color: white;
             font-weight: bold;
         }
 
@@ -205,7 +210,7 @@
             font-weight: 600;
             margin-bottom: 8px;
             display: block;
-            color: #333;
+            color: #333333;
         }
 
         .input-field {
@@ -215,11 +220,13 @@
             border-radius: 12px;
             font-size: 16px;
             transition: border-color 0.2s;
+            background: #ffffff;
+            color: #1a1a1a;
         }
 
         .input-field:focus {
             outline: none;
-            border-color: #0a2540;
+            border-color: #0088cc;
         }
 
         /* Scroll Pickers */
@@ -251,7 +258,7 @@
         }
 
         .picker-option.selected {
-            background: #2a2a2a;
+            background: #0088cc;
             color: white;
         }
 
@@ -259,7 +266,7 @@
         .continue-button {
             width: 100%;
             padding: 18px;
-            background: #2a2a2a;
+            background: #0088cc;
             color: white;
             border: none;
             border-radius: 30px;
@@ -271,19 +278,20 @@
         }
 
         .continue-button:disabled {
-            background: #ccc;
+            background: #cccccc;
             cursor: not-allowed;
         }
 
         .continue-button:not(:disabled):hover {
+            background: #006699;
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0,136,204,0.3);
         }
 
         /* Landing Screen Specific */
         .landing-screen {
             padding: 0;
-            background: linear-gradient(135deg, #0a2540 0%, #163d5e 100%);
+            background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
             color: white;
         }
 
@@ -390,7 +398,7 @@
 
         .cta-button {
             background: white;
-            color: #2a2a2a;
+            color: #0088cc;
         }
 
         .secondary-link {
@@ -421,7 +429,7 @@
         }
 
         .toggle-switch.active {
-            background: #2a2a2a;
+            background: #0088cc;
         }
 
         .toggle-slider {
