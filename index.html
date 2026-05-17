@@ -103,11 +103,32 @@
             left: 20px;
             width: 40px;
             height: 40px;
-            background: none;
-            border: none;
+            background: #f5f5f5;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
             font-size: 24px;
             cursor: pointer;
             z-index: 10;
+            color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .back-button:hover {
+            background: #e8e8e8;
+            border-color: #0088cc;
+        }
+
+        .landing-screen .back-button {
+            background: rgba(255,255,255,0.2);
+            border-color: rgba(255,255,255,0.3);
+            color: white;
+        }
+
+        .landing-screen .back-button:hover {
+            background: rgba(255,255,255,0.3);
         }
 
         /* Screen Content */
@@ -978,6 +999,7 @@
 
             <!-- SCREEN 17: Paywall -->
             <div class="screen" id="screen17">
+                <button class="back-button" onclick="prevScreen()">←</button>
                 <h2 class="screen-title" style="text-align: center;">Start Your Free Trial</h2>
                 <p class="screen-subtitle" style="text-align: center;">7 days free, then choose your plan</p>
                 <div class="options-container">
